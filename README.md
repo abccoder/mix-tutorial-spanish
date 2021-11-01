@@ -1,5 +1,5 @@
 # mix-tutorial-spanish
-Sample client applications for Nuance Mix Services
+# Sample client applications for Nuance Mix Services
 
 asr: Automatic Speech Recognition as a Service (ASRaas)
 nlu: Natural Language Understanding as a Service (NLUaas)

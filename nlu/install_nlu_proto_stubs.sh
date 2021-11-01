@@ -1,3 +1,4 @@
+# Check https://docs.mix.nuance.com/nlu-grpc/v1/#grpc-setup for details
 unzip -o ../proto_files/nuance_nlu_runtime_protos_v1.zip
 unzip -o ../proto_files/nuance_nlu_wordset_protos_v1.zip
 
@@ -5,10 +6,11 @@ mkdir -p google/api
 curl https://raw.githubusercontent.com/googleapis/googleapis/master/google/api/annotations.proto > google/api/annotations.proto
 curl https://raw.githubusercontent.com/googleapis/googleapis/master/google/api/http.proto > google/api/http.proto
 
-echo "generate the stubs for support files"
+echo "Generate the stubs for support files"
 python -m grpc_tools.protoc --proto_path=./ --python_out=./ google/api/http.proto
 python -m grpc_tools.protoc --proto_path=./ --python_out=./ google/api/annotations.proto
 
+echo "Generate client stubs from proto files"
 python -m grpc_tools.protoc --proto_path=./ --python_out=./ --grpc_python_out=./ nuance/nlu/v1/runtime.proto
 python -m grpc_tools.protoc --proto_path=./ --python_out=./  nuance/nlu/v1/result.proto
 python -m grpc_tools.protoc --proto_path=./ --python_out=./  nuance/nlu/v1/interpretation-common.proto

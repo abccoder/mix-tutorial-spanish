@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns:nuance="https://developer.nuance.com/mix/nlu/trsx" xml:lang="spa-XLA" nuance:version="2.4">
+    <metadata>
+        <entry key="created_at">2020-02-12 16:42:44+00:00</entry>
+        <entry key="created_at">2020-03-30 19:21:43+00:00</entry>
+        <entry key="created_by">Jane Smith</entry>
+        <entry key="created_by">jane.smith@company.com</entry>
+        <entry key="description">Sample model for demonstration of 1 simple intent and two concepts</entry>
+        <entry key="short_name">Coffee Maker Sample Model</entry>
+        <entry key="source">Nuance Communications</entry>
+        <entry key="type">sample</entry>
+        <entry key="version">2.0.0</entry>
+    </metadata>
+    <sources>
+        <source name="nuance_custom_data" displayName="nuance_custom_data" version="1.0" type="CUSTOM" useForOOV="true"/>
+    </sources>
+    <ontology base="http://localhost:8080/resources/ontology-1.0.xml">
+        <intents>
+            <intent name="ORDER_COFFEE">
+                <links>
+                    <link conceptref="COFFEE_SIZE"/>
+                    <link conceptref="COFFEE_TYPE"/>
+                </links>
+            </intent>
+        </intents>
+        <concepts>
+           <concept name="COFFEE_TYPE"/>
+            <concept name="COFFEE_SIZE"/>
+        </concepts>
+    </ontology>
+    <dictionaries>
+        <dictionary conceptref="COFFEE_TYPE">
+            <entry literal="americano" value="americano"/>
+            <entry literal="café latte" value="cafe latte"/>
+            <entry literal="cappuchino" value="cappuccino"/>
+            <entry literal="café" value="americano"/>
+            <entry literal="espresso" value="espresso"/>
+            <entry literal="latte" value="latte"/>
+            <entry literal="mocha" value="mocha"/>
+            <entry literal="mocha latte" value="mocha latte"/>
+            <entry literal="latte mocha" value="mocha latte"/>
+        </dictionary>
+        <dictionary conceptref="COFFEE_SIZE">
+            <entry literal="doble" value="lg"/>
+            <entry literal="grande" value="md"/>
+            <entry literal="largo" value="lg"/>
+            <entry literal="mediano" value="md"/>
+            <entry literal="chico" value="sm"/>
+        </dictionary>
+    </dictionaries>
+    <samples>
+        <sample intentref="ORDER_COFFEE" count="1">Quiero un<annotation conceptref="COFFEE_TYPE">café</annotation><annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">Quiero un<annotation conceptref="COFFEE_TYPE">espresso</annotation><annotation conceptref="COFFEE_SIZE">doble</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">prepárame un<annotation conceptref="COFFEE_TYPE">café</annotation><annotation conceptref="COFFEE_SIZE">largo</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">deme un<annotation conceptref="COFFEE_TYPE">café</annotation>,<annotation conceptref="COFFEE_SIZE">largo</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">mocha</annotation><annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">me gustaría un<annotation conceptref="COFFEE_TYPE">cappuccino</annotation><annotation conceptref="COFFEE_SIZE">mediano</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">café</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>.</sample>
+        <sample intentref="ORDER_COFFEE" count="1">podrías darme un<annotation conceptref="COFFEE_TYPE">latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">largo</annotation>?</sample>
+        <sample intentref="ORDER_COFFEE" count="1">Podría darme un<annotation conceptref="COFFEE_TYPE">café</annotation>
+            <annotation conceptref="COFFEE_SIZE">largo</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">mocha</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">mediano</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">deme un<annotation conceptref="COFFEE_TYPE">americano</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">cappuccino</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">dame un<annotation conceptref="COFFEE_TYPE">espresso</annotation>
+            <annotation conceptref="COFFEE_SIZE">doble</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">prepárame un<annotation conceptref="COFFEE_TYPE">latte</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">tomaré un<annotation conceptref="COFFEE_TYPE">café</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">me gustaría un<annotation conceptref="COFFEE_TYPE">cappuccino</annotation>
+            <annotation conceptref="COFFEE_SIZE">doble</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">solo un<annotation conceptref="COFFEE_TYPE">latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">podrías darme unn<annotation conceptref="COFFEE_TYPE">americano</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">mocha latte</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">mocha latte</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">espresso</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">cafe latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">grande</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">cafe latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">grande</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">Quiero un<annotation conceptref="COFFEE_TYPE">mocha</annotation>
+            <annotation conceptref="COFFEE_SIZE">largo</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">prepárame un<annotation conceptref="COFFEE_TYPE">americano</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">americano</annotation>por favor ,<annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">prepárame un<annotation conceptref="COFFEE_TYPE">americano</annotation>
+            <annotation conceptref="COFFEE_SIZE">largo</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">hazme un<annotation conceptref="COFFEE_SIZE">chico</annotation>
+            <annotation conceptref="COFFEE_TYPE">mocha</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">voy a querer un<annotation conceptref="COFFEE_TYPE">capuchino</annotation>
+            <annotation conceptref="COFFEE_SIZE">mediano</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">cafe latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">venti</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">espresso</annotation>
+            <annotation conceptref="COFFEE_SIZE">mediano</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">café</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">dame un<annotation conceptref="COFFEE_TYPE">mocha</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">cafe latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">chico</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">
+            <annotation conceptref="COFFEE_TYPE">café</annotation>
+            <annotation conceptref="COFFEE_SIZE">largo</annotation>por favor</sample>
+        <sample intentref="ORDER_COFFEE" count="1">creo que quiero un<annotation conceptref="COFFEE_TYPE">latte</annotation>
+            <annotation conceptref="COFFEE_SIZE">mdiano</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">probaré un<annotation conceptref="COFFEE_SIZE"><annotation conceptref="COFFEE_TYPE">mocha</annotation>chico</annotation>
+        </sample>
+        <sample intentref="ORDER_COFFEE" count="1">un<annotation conceptref="COFFEE_TYPE">espresso</annotation>por favor</sample>
+    </samples>
+</project>

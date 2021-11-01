@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns:nuance="https://developer.nuance.com/mix/nlu/trsx" xml:lang="spa-XLA" nuance:version="2.5">
+    <sources>
+        <source name="nuance_custom_data" displayName="nuance_custom_data" version="1.0" type="CUSTOM" useForOOV="true"/>
+    </sources>
+    <ontology base="http://localhost:8080/resources/ontology-1.0.xml">
+        <intents>
+            <intent name="Position">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="Team">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="Nationality">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="Goodbye"/>
+            <intent name="Sport">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="dateBorn">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="BirthLocation">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+            <intent name="AthleteNameOnly">
+                <links>
+                    <link conceptref="AthleteName"/>
+                </links>
+            </intent>
+        </intents>
+        <concepts>
+            <concept name="AthleteName"/>
+        </concepts>
+    </ontology>
+    <dictionaries>
+        <dictionary conceptref="AthleteName">
+            <entry literal="Aaron Donald" value="Aaron Donald"/>
+            <entry literal="Aaron Kuhl" value="Aaron Kuhl"/>
+            <entry literal="Adam Federici" value="Adam Federici"/>
+            <entry literal="Adam Lallana" value="Adam Lallana"/>
+            <entry literal="Adama Traoré" value="Adama Traoré"/>
+            <entry literal="Alan Shearer" value="Alan Shearer"/>
+            <entry literal="Alessio Cragno" value="Alessio Cragno"/>
+            <entry literal="Alex Caruso" value="Alex Caruso"/>
+            <entry literal="Alex Morgan" value="Alex Morgan"/>
+            <entry literal="Alex Oxlade-Chamberlain" value="Alex Oxlade-Chamberlain"/>
+            <entry literal="Alexis Sanchez" value="Alexis Sanchez"/>
+            <entry literal="Ali Al Habsi" value="Ali Al Habsi"/>
+            <entry literal="Allan Saint-Maximin" value="Allan Saint-Maximin"/>
+            <entry literal="Allen Iverson" value="Allen Iverson"/>
+            <entry literal="Andre Agassi" value="Andre Agassi"/>
+            <entry literal="Andres Iniesta" value="Andres Iniesta"/>
+            <entry literal="Andy Rinomhota" value="Andy Rinomhota"/>
+            <entry literal="Anfernee Hardaway" value="Anfernee Hardaway"/>
+            <entry literal="Angel Di Maria" value="Angel Di Maria"/>
+            <entry literal="Anthony Davis" value="Anthony Davis"/>
+            <entry literal="Boulaye Dia" value="Boulaye Dia"/>
+            <entry literal="Canelo" value="Saul Alvarez"/>
+            <entry literal="Canelo Alvarez" value="Saul Alvarez"/>
+            <entry literal="Ched Evans" value="Ched Evans"/>
+            <entry literal="Chris Jones" value="Chris Jones"/>
+            <entry literal="Chris Paul" value="Chris Paul"/>
+            <entry literal="Christian Eriksen" value="Christian Eriksen"/>
+            <entry literal="Chuba Akpom" value="Chuba Akpom"/>
+            <entry literal="Clarence Seedorf" value="Clarence Seedorf"/>
+            <entry literal="Conor McGregor" value="Conor McGregor"/>
+            <entry literal="Cristiano Ronaldo" value="Cristiano Ronaldo"/>
+            <entry literal="Dak Prescott" value="Dak Prescott"/>
+            <entry literal="Damian Lillard" value="Damian Lillard"/>
+            <entry literal="Daniel Williams" value="Daniel Williams"/>
+            <entry literal="Danny Ings" value="Danny Ings"/>
+            <entry literal="David Bakhtiari" value="David Bakhtiari"/>
+            <entry literal="David Beckham" value="David Beckham"/>
+            <entry literal="David Brooks" value="David Brooks"/>
+            <entry literal="David Trezeguet" value="David Trezeguet"/>
+            <entry literal="David de Gea" value="David de Gea"/>
+            <entry literal="DeAndre Hopkins" value="DeAndre Hopkins"/>
+            <entry literal="Dele Alli" value="Dele Alli"/>
+            <entry literal="Dennis Bergkamp" value="Dennis Bergkamp"/>
+            <entry literal="Deshaun Watson" value="Deshaun Watson"/>
+            <entry literal="Diego Maradona" value="Diego Maradona"/>
+            <entry literal="Dustin Johnson" value="Dustin Johnson"/>
+            <entry literal="Eric Cantona" value="Eric Cantona"/>
+            <entry literal="Erik Lamela" value="Erik Lamela"/>
+            <entry literal="Erling Haaland" value="Erling Haaland"/>
+            <entry literal="Felipe Anderson" value="Felipe Anderson"/>
+            <entry literal="Fernando Forestieri" value="Fernando Forestieri"/>
+            <entry literal="Francesco Totti" value="Francesco Totti"/>
+            <entry literal="Franck Ribery" value="Franck Ribery"/>
+            <entry literal="Frank Lampard" value="Frank Lampard"/>
+            <entry literal="Garath McCleary" value="Garath McCleary"/>
+            <entry literal="Garbiñe Muguruza" value="Garbiñe Muguruza"/>
+            <entry literal="Gareth Bale" value="Gareth Bale"/>
+            <entry literal="Georges St-Pierre" value="Georges St-Pierre"/>
+            <entry literal="Gheorghe Hagi" value="Gheorghe Hagi"/>
+            <entry literal="Giannis Antetokounmpo" value="Giannis Antetokounmpo"/>
+            <entry literal="Gylfi Sigurdsson" value="Gylfi Sigurdsson"/>
+            <entry literal="Harry Kane" value="Harry Kane"/>
+            <entry literal="Hulk Hogan" value="Hulk Hogan"/>
+            <entry literal="Iker Casillas" value="Iker Casillas"/>
+            <entry literal="Inbee Park" value="Inbee Park"/>
+            <entry literal="J.J. Watt" value="J.J. Watt"/>
+            <entry literal="Jack Grealish" value="Jack Grealish"/>
+            <entry literal="Jack Nicklaus" value="Jack Nicklaus"/>
+            <entry literal="Jadon Sancho" value="Jadon Sancho"/>
+            <entry literal="Jalen Ramsey" value="Jalen Ramsey"/>
+            <entry literal="James Bree" value="James Bree"/>
+            <entry literal="James Harden" value="James Harden"/>
+            <entry literal="Jamie Vardy" value="Jamie Vardy"/>
+            <entry literal="Jason Richardson" value="Jason Richardson"/>
+            <entry literal="Jay-Jay Okocha" value="Jay-Jay Okocha"/>
+            <entry literal="Jesus Navas" value="Jesus Navas"/>
+            <entry literal="Jimmy Butler" value="Jimmy Butler"/>
+            <entry literal="Jin Young Ko" value="Jin Young Ko"/>
+            <entry literal="Joe Aribo" value="Joe Aribo"/>
+            <entry literal="Joey Bosa" value="Joey Bosa"/>
+            <entry literal="John Cena" value="John Cena"/>
+            <entry literal="John Stockton" value="John Stockton"/>
+            <entry literal="John Stones" value="John Stones"/>
+            <entry literal="John Swift" value="John Swift"/>
+            <entry literal="John Terry" value="John Terry"/>
+            <entry literal="Jonjo Shelvey" value="Jonjo Shelvey"/>
+            <entry literal="Jordan Mutch" value="Jordan Mutch"/>
+            <entry literal="Josh Allen" value="Josh Allen"/>
+            <entry literal="Julian Draxler" value="Julian Draxler"/>
+            <entry literal="Jürgen Klopp" value="Jürgen Klopp"/>
+            <entry literal="Kasper Schmeichel" value="Kasper Schmeichel"/>
+            <entry literal="Kevin De Bruyne" value="Kevin De Bruyne"/>
+            <entry literal="Kevin Durant" value="Kevin Durant"/>
+            <entry literal="Klay Thompson" value="Klay Thompson"/>
+            <entry literal="Kobe Bryant" value="Kobe Bryant"/>
+            <entry literal="Kristaps Porziņģis" value="Kristaps Porziņģis"/>
+            <entry literal="Kylian Mbappe" value="Kylian Mbappe"/>
+            <entry literal="Kyrie Irving" value="Kyrie Irving"/>
+            <entry literal="LeBron James" value="LeBron James"/>
+            <entry literal="Leonard Williams" value="Leonard Williams"/>
+            <entry literal="Lewis Hamilton" value="Lewis Hamilton"/>
+            <entry literal="Liam Moore" value="Liam Moore"/>
+            <entry literal="Lionel Messi" value="Lionel Messi"/>
+            <entry literal="Lorenzo Insigne" value="Lorenzo Insigne"/>
+            <entry literal="Luka Modric" value="Luka Modric"/>
+            <entry literal="Luke Shaw" value="Luke Shaw"/>
+            <entry literal="Magic Johnson" value="Magic Johnson"/>
+            <entry literal="Manu Tuilagi" value="Manu Tuilagi"/>
+            <entry literal="Marco van Basten" value="Marco van Basten"/>
+            <entry literal="Marlon Humphrey" value="Marlon Humphrey"/>
+            <entry literal="Mason Mount" value="Mason Mount"/>
+            <entry literal="Matt Judon" value="Matt Judon"/>
+            <entry literal="Matt Le Tissier" value="Matt Le Tissier"/>
+            <entry literal="Max Verstappen" value="Max Verstappen"/>
+            <entry literal="Megan Rapinoe" value="Megan Rapinoe"/>
+            <entry literal="Messi" value="Lionel Messi"/>
+            <entry literal="Mesut Ozil" value="Mesut Ozil"/>
+            <entry literal="Michael Ballack" value="Michael Ballack"/>
+            <entry literal="Michael Jordan" value="Michael Jordan"/>
+            <entry literal="Michael Olise" value="Michael Olise"/>
+            <entry literal="Mikaela Shiffrin" value="Mikaela Shiffrin"/>
+            <entry literal="Mike Trout" value="Mike Trout"/>
+            <entry literal="Mohamed Salah" value="Mohamed Salah"/>
+            <entry literal="Mookie Betts" value="Mookie Betts"/>
+            <entry literal="Myles Garrett" value="Myles Garrett"/>
+            <entry literal="N'Golo Kante" value="N'Golo Kante"/>
+            <entry literal="Naomi Osaka" value="Naomi Osaka"/>
+            <entry literal="Neymar" value="Neymar"/>
+            <entry literal="Nick Blackman" value="Nick Blackman"/>
+            <entry literal="Novak Djokovic" value="Novak Djokovic"/>
+            <entry literal="Orlando Sá" value="Orlando Sá"/>
+            <entry literal="Oscar" value="Oscar"/>
+            <entry literal="Owen Farrell" value="Owen Farrell"/>
+            <entry literal="Patrick Mahomes" value="Patrick Mahomes"/>
+            <entry literal="Patrik Schick" value="Patrik Schick"/>
+            <entry literal="Paul George" value="Paul George"/>
+            <entry literal="Paul Pogba" value="Paul Pogba"/>
+            <entry literal="Paul Scholes" value="Paul Scholes"/>
+            <entry literal="Peter Schmeichel" value="Peter Schmeichel"/>
+            <entry literal="Phil Jagielka" value="Phil Jagielka"/>
+            <entry literal="Phil Jones" value="Phil Jones"/>
+            <entry literal="Phil Mickelson" value="Phil Mickelson"/>
+            <entry literal="Pierre-Emerick Aubameyang" value="Pierre-Emerick Aubameyang"/>
+            <entry literal="Rivaldo" value="Rivaldo"/>
+            <entry literal="Robert Lewandowski" value="Robert Lewandowski"/>
+            <entry literal="Robin van Persie" value="Robin van Persie"/>
+            <entry literal="Roger Federer" value="Roger Federer"/>
+            <entry literal="Romain Dumas" value="Romain Dumas"/>
+            <entry literal="Romelu Lukaku" value="Romelu Lukaku"/>
+            <entry literal="Ronaldinho" value="Ronaldinho"/>
+            <entry literal="Ronnie Stanley" value="Ronnie Stanley"/>
+            <entry literal="Ross Barkley" value="Ross Barkley"/>
+            <entry literal="Russell Westbrook" value="Russell Westbrook"/>
+            <entry literal="Ruud van Nistelrooy" value="Ruud van Nistelrooy"/>
+            <entry literal="Ryan Giggs" value="Ryan Giggs"/>
+            <entry literal="Santi Cazorla" value="Santi Cazorla"/>
+            <entry literal="Saul Alvarez" value="Saul Alvarez"/>
+            <entry literal="Saul Canelo Alvarez" value="Saul Alvarez"/>
+            <entry literal="Saúl Canelo Alvarez" value="Saul Alvarez"/>
+            <entry literal="Sei Young Kim" value="Sei Young Kim"/>
+            <entry literal="Serena Williams" value="Serena Williams"/>
+            <entry literal="Shaquil Barrett" value="Shaquil Barrett"/>
+            <entry literal="Shaquille O'Neal" value="Shaquille O'Neal"/>
+            <entry literal="Simone Biles" value="Simone Biles"/>
+            <entry literal="Stephen Curry" value="Stephen Curry"/>
+            <entry literal="Steven Gerrard" value="Steven Gerrard"/>
+            <entry literal="Steven Sidwell" value="Steven Sidwell"/>
+            <entry literal="The British Bulldog" value="The British Bulldog"/>
+            <entry literal="The Rock" value="The Rock"/>
+            <entry literal="Thierry Henry" value="Thierry Henry"/>
+            <entry literal="Tiger Woods" value="Tiger Woods"/>
+            <entry literal="Tom Brady" value="Tom Brady"/>
+            <entry literal="Tom Ince" value="Tom Ince"/>
+            <entry literal="Trent Williams" value="Trent Williams"/>
+            <entry literal="Tyson Fury" value="Tyson Fury"/>
+            <entry literal="Vince Carter" value="Vince Carter"/>
+            <entry literal="Wayne Rooney" value="Wayne Rooney"/>
+            <entry literal="Wesley Sneijder" value="Wesley Sneijder"/>
+            <entry literal="Wilfried Bony" value="Wilfried Bony"/>
+            <entry literal="Xabi Alonso" value="Xabi Alonso"/>
+            <entry literal="Xherdan Shaqiri" value="Xherdan Shaqiri"/>
+            <entry literal="Yann Kermorgant" value="Yann Kermorgant"/>
+            <entry literal="Zinedine Zidane" value="Zinedine Zidane"/>
+            <entry literal="Zlatan Ibrahimovic" value="Zlatan Ibrahimovic"/>
+        </dictionary>
+    </dictionaries>
+    <samples>
+        <sample intentref="AthleteNameOnly" count="1"><annotation conceptref="AthleteName">Serena Williams</annotation></sample>
+        <sample intentref="AthleteNameOnly" count="1"><annotation conceptref="AthleteName">Tom Brady</annotation></sample>
+        <sample intentref="AthleteNameOnly" count="1">y<annotation conceptref="AthleteName">Tiger Woods</annotation></sample>
+        <sample intentref="BirthLocation" count="1">de donde es originario<annotation conceptref="AthleteName">Roger Federer</annotation></sample>
+        <sample intentref="BirthLocation" count="1">de dónde es oriundo<annotation conceptref="AthleteName">Lewis Hamilton</annotation></sample>
+        <sample intentref="BirthLocation" count="1">de que pais es<annotation conceptref="AthleteName">Lionel Messi</annotation></sample>
+        <sample intentref="BirthLocation" count="1">dónde nació<annotation conceptref="AthleteName">serena williams</annotation></sample>
+        <sample intentref="BirthLocation" count="1">en que país nació<annotation conceptref="AthleteName">tyson fury</annotation>?</sample>
+        <sample intentref="dateBorn" count="1">Cual es la fecha de nacimiento de<annotation conceptref="AthleteName">Cristiano Ronaldo</annotation>? }</sample>
+        <sample intentref="dateBorn" count="1">Cuándo nació el<annotation conceptref="AthleteName">Canelo Alvarez</annotation></sample>
+        <sample intentref="dateBorn" count="1">En que año nació<annotation conceptref="AthleteName">Chris Paul</annotation>?</sample>
+        <sample intentref="dateBorn" count="1">en que fecha celebra su cumple<annotation conceptref="AthleteName">Georges St-Pierre</annotation></sample>
+        <sample intentref="dateBorn" count="1">y cuándo nació ?</sample>
+        <sample intentref="dateBorn" count="1">¿ Cuándo es el cumpleaños de<annotation conceptref="AthleteName">Iker Casillas</annotation>?</sample>
+        <sample intentref="Nationality" count="1">a que pais representa<annotation conceptref="AthleteName">Tyson Fury</annotation>?</sample>
+        <sample intentref="Nationality" count="1">cuál es la ciudadanía de<annotation conceptref="AthleteName">Ronaldinho</annotation></sample>
+        <sample intentref="Nationality" count="1">cuál es la nacionalidad de<annotation conceptref="AthleteName">Alex Morgan</annotation>?</sample>
+        <sample intentref="Nationality" count="1">cuál es su ciudadanía ?</sample>
+        <sample intentref="Nationality" count="1">que nacionalidad tiene<annotation conceptref="AthleteName">Rivaldo</annotation></sample>
+        <sample intentref="Nationality" count="1">y cuál es su nacionalidad ?</sample>
+        <sample intentref="Nationality" count="1">y que nacionalidad tiene ?</sample>
+        <sample intentref="Position" count="1">¿ Cuál era la posición de<annotation conceptref="AthleteName">Zinedine Zidane</annotation>?</sample>
+        <sample intentref="Position" count="1">¿ Qué posición juega<annotation conceptref="AthleteName">Lionel Messi</annotation>?</sample>
+        <sample intentref="Sport" count="1">En que disciplina deportiva se desempeña<annotation conceptref="AthleteName">Shaquille O'Neal</annotation></sample>
+        <sample intentref="Sport" count="1">como se llama el deporte que juega<annotation conceptref="AthleteName">naomi osaka</annotation>?</sample>
+        <sample intentref="Sport" count="1">cuál es el deporte de<annotation conceptref="AthleteName">Patrick Mahomes</annotation>?</sample>
+        <sample intentref="Sport" count="1">que deporte practica<annotation conceptref="AthleteName">tiger woods</annotation></sample>
+        <sample intentref="Team" count="1">Y en donde juega</sample>
+        <sample intentref="Team" count="1">Y para que equipo juega</sample>
+        <sample intentref="Team" count="1">En donde juega<annotation conceptref="AthleteName">Neymar</annotation>?</sample>
+        <sample intentref="Team" count="1">En que equipo juega<annotation conceptref="AthleteName">Cristiano Ronaldo</annotation>?</sample>
+        <sample intentref="Team" count="1">cuál es el equipo de<annotation conceptref="AthleteName">Neymar</annotation>?</sample>
+        <sample intentref="Team" count="1">en donde jugaba<annotation conceptref="AthleteName">Shaquille O'Neal</annotation></sample>
+        <sample intentref="Goodbye" count="1">adios</sample>
+        <sample intentref="Goodbye" count="1">es todo gracias</sample>
+        <sample intentref="Goodbye" count="1">es todo muchas gracias</sample>
+        <sample intentref="Goodbye" count="1">es todo muy amable</sample>
+        <sample intentref="Goodbye" count="1">es todo</sample>
+        <sample intentref="Goodbye" count="1">eso es todo gracias</sample>
+        <sample intentref="Goodbye" count="1">eso es todo</sample>
+        <sample intentref="Goodbye" count="1">esos es todo gracias</sample>
+        <sample intentref="Goodbye" count="1">gracias es todo</sample>
+        <sample intentref="Goodbye" count="1">hasta luego gracias por la ayuda</sample>
+        <sample intentref="Goodbye" count="1">muchas gracias , hasta luego</sample>
+        <sample intentref="Goodbye" count="1">muchas gracias eso es todo</sample>
+        <sample intentref="Goodbye" count="1">nada más por el momento</sample>
+        <sample intentref="Goodbye" count="1">ninguna , gracias</sample>
+        <sample intentref="Goodbye" count="1">no es todo</sample>
+        <sample intentref="Goodbye" count="1">no eso es todo gracias</sample>
+        <sample intentref="Goodbye" count="1">no gracias eso es todo</sample>
+        <sample intentref="Goodbye" count="1">quiero contratar internet nada más señorita eso es todo</sample>
+        <sample intentref="Goodbye" count="1">terminar el chat</sample>
+        <sample intentref="Goodbye" count="1">terminar</sample>
+    </samples>
+</project>

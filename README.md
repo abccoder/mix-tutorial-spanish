@@ -18,18 +18,20 @@ This sections takes you through the process of creating a simple coffee applicat
 
 ### Application Code
 
-- **asr**: Automatic Speech Recognition as a Service (ASRaas) https://docs.mix.nuance.com/asr-grpc/v1/#prerequisites-from-mix
-- **nlu**: Natural Language Understanding as a Service (NLUaas) https://docs.mix.nuance.com/nlu-grpc/v1/#prerequisites-from-mix
-- **dlg**: Dialog as a Service (DLGaaS) https://docs.mix.nuance.com/dialog-grpc/v1/#prerequisites-from-mix
-- **tts**: Text to Speech as a Service (TTSaaS) https://docs.mix.nuance.com/tts-grpc/v1/#prerequisites-from-mix
+- **asr**: Automatic Speech Recognition as a Service (ASRaas)
+- **nlu**: Natural Language Understanding as a Service (NLUaas)
+- **dlg**: Dialog as a Service (DLGaaS)
+- **tts**: Text to Speech as a Service (TTSaaS)
 
 You can try out this simple client applications. 
 To run them, you need:
-
-Python 3.6 or later.
-
-The generated Python stub files from gRPC setup.
-Your client ID and secret from Prerequisites from Mix.
+- Python 3.6 or later.
+- Your client ID and secret from Prerequisites from Mix
+- The generated Python stub files from gRPC setup, as described at:
+  - **asr**: https://docs.mix.nuance.com/asr-grpc/v1/#prerequisites-from-mix
+  - **nlu**: https://docs.mix.nuance.com/nlu-grpc/v1/#prerequisites-from-mix
+  - **dlg**: https://docs.mix.nuance.com/dialog-grpc/v1/#prerequisites-from-mix
+  - **tts**: https://docs.mix.nuance.com/tts-grpc/v1/#prerequisites-from-mix
 
 Check shell scripts for info on how to install dependencies & execute the python apps.
 

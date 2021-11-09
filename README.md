@@ -1,5 +1,8 @@
 # mix-tutorial-spanish
 
+Create a free account for Nuance Mix.
+https://account.crt.nuance.com/auth/realms/mix/protocol/openid-connect/registrations?client_id=portal-connect-auth&response_type=code&redirect_uri=https://mix.nuance.com/v3/
+
 Please, check the official Mix Documentation at: https://docs.mix.nuance.com/
 
 ## Sample client applications for Nuance Mix Services

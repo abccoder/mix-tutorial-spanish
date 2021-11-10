@@ -1,6 +1,6 @@
 # mix-tutorial-spanish
 
-Create a free account for Nuance Mix.
+Create a free account for Nuance Mix. Please note that a business email address is required.
 
 https://account.crt.nuance.com/auth/realms/mix/protocol/openid-connect/registrations?client_id=portal-connect-auth&response_type=code&redirect_uri=https://mix.nuance.com/v3/
 

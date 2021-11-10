@@ -37,6 +37,12 @@ To run them, you need:
   - **dlg**: https://docs.mix.nuance.com/dialog-grpc/v1/#prerequisites-from-mix
   - **tts**: https://docs.mix.nuance.com/tts-grpc/v1/#prerequisites-from-mix
 
+Install required Python modules
+
+pip install sportinf
+pip install pyaudio
+pip install simpleaudio
+
 Check shell scripts for info on how to install dependencies & execute the python apps.
 
 ```

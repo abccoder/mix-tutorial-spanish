@@ -4,7 +4,12 @@ Create a free account for Nuance Mix. Please note that a business email address 
 
 https://account.crt.nuance.com/auth/realms/mix/protocol/openid-connect/registrations?client_id=portal-connect-auth&response_type=code&redirect_uri=https://mix.nuance.com/v3/
 
-Please, check the official Mix Documentation at: https://docs.mix.nuance.com/
+| Resource	| Link |
+| --- | --- |
+| Forums	| https://community.mix.nuance.com |
+| Documentation |	https://docs.mix.nuance.com |
+| GitHub	 | https://github.com/nuance-communications |
+| Status	 | https://status.mix.nuance.com |
 
 ## Sample client applications for Nuance Mix Services
  

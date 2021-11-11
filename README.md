@@ -44,9 +44,13 @@ To run them, you need:
 
 Install required Python modules
 
+```
 pip install sportinf
+
 pip install pyaudio
+
 pip install simpleaudio
+```
 
 Check shell scripts for info on how to install dependencies & execute the python apps.
 

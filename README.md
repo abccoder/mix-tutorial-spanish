@@ -46,9 +46,7 @@ Install required Python modules
 
 ```
 pip install sportinf
-
 pip install pyaudio
-
 pip install simpleaudio
 ```
 
